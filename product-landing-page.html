@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product landing page created as an exercise from freecodecamp.org</title>
+</head>
+
+<style type="text/css">
+	#header-img{
+		width: 100px;
+		height: 50px;
+	}
+	#nav-bar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background:linear-gradient(90deg, #a0efcc, #bebfdb);	
+	}
+	.flex-container{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+	#header-img{
+		padding-right: 10px;
+		align-self: flex-start;
+		padding-right: 75%;
+	}
+
+@media (max-height: 600px) { 
+		p {
+	    font-size: 10px;
+	  	}
+	 }
+
+	.nav-link{
+		padding-right: 10px;
+		padding-left:10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#form{
+		margin-top: 60px;
+	}
+
+	#video{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#container{
+		padding: 5px;
+		display: flex;
+		flex-direction: row;
+		height: 300px;
+	}
+	.laptop-container{
+		flex-wrap: wrap;
+		width: 30%;
+		border: 1px solid;
+		justify-content: flex-start;
+		flex-direction: column;
+		border-color: black;
+		flex-grow: 1;
+	}
+	.product-title{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		background-color: #dee2e8;
+	}
+	.price{
+		width: 100%
+		font-size: "10";
+		text-align: center;
+	}
+	.image{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+</style>
+
+<body>
+	<header id='header'>
+		<nav id="nav-bar" class="flex-container">
+			  <img src="microsoft-logo.jpg" id="header-img">
+			  <a href="#header" class="nav-link">Home</a>
+			  <a href="#video" class="nav-link">Features</a>
+			  <a href="#page-footer" class="nav-link">Contact</a>
+		</nav>
+	</header>
+
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+		<p>Enter you email address in the field below to receive more information.</p>
+		<input type="email" id="email" name="email" placeholder="Email address">
+		<input type="submit" id="submit">
+	</form>
+
+	<iframe id="video" src="laptop-video.mp4" width="840" height="630"></iframe>
+
+	<div id="container">
+		<div class="laptop-container">
+			<p class="product-title" style="font-size:20px;">Microsoft Surface Pro 4 Core i5</p>
+			<img src="laptop-3.png" width="120px" height="120px" class="image">
+			<p class="price" style="font-size:40px;">£800</p>
+		</div>
+		
+		<div class="laptop-container">
+			<p class="product-title" style="font-size:20px;">Microsoft Surface 2</p>
+			<img src="laptop-1.png" width="120px" height="120px" class="image">
+			<p class="price" style="font-size:40px;">£830</p>
+		</div>
+		
+		<div class="laptop-container">
+			<p class="product-title" style="font-size:20px;">Microsoft Surface Pro 6</p>
+			<img src="laptop-2.png" width="120px" height="120px" class="image">
+			<p class="price" style="font-size:40px;">£1400</p>
+		</div>
+	</div>
+
+
+
+	<footer id="page-footer">
+				<p>Created by Anna Goclowska, to find out more about me visit my LinkedIn profile <a href="https://www.linkedin.com/in/anna-goclowska-6250b714a/" target="_blank">here</a>.</p>
+	</footer>
+</body>
+
+</html>
